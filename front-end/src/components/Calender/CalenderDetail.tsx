@@ -3,7 +3,7 @@ import React from 'react';
 const CalenderDetail = () => {
   return (
     <div>
-      메인 입니다.
+      달력 상세
     </div>
   )
 };
