@@ -1,13 +1,14 @@
-import { Grid } from '@material-ui/core';
+import {Button, Grid} from '@material-ui/core';
 import React from 'react';
 import Calender from '../components/Calender/Calender';
-import CalenderDetail from '../components/Calender/CalenderDetail';
+import {Link, useNavigate} from 'react-router-dom';
 
 const CalenderPage = () => {
   return (
     <Grid>
       <Calender/>
-      <CalenderDetail/>
+        <Link to={'/routines'}>간편등록</Link>
+        <Link to={'/board'}>게시판</Link>
     </Grid>
   )
 };
