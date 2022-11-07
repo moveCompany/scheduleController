@@ -2,6 +2,7 @@ import {Button, Grid} from '@material-ui/core';
 import React from 'react';
 import Calender from '../components/Calender/Calender';
 import {Link, useNavigate, useNavigation} from 'react-router-dom';
+import DailyCheck from "../components/CheckList/DailyCheck";
 
 const MainCalenderPage = () => {
     const navigation=useNavigate()
@@ -18,6 +19,7 @@ const MainCalenderPage = () => {
     <Grid>
         메인 달력 화면입니다.
         <Calender/>
+        <DailyCheck/>
         <div>
             <Button onClick={goLogin}>
                 로그인화면 버튼
