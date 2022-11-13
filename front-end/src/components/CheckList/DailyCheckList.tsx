@@ -1,7 +1,14 @@
 import CheckItem from "./CheckItem";
 import {Grid} from "@material-ui/core";
+interface DailyCheckListProps {
+    onDelete : any;
+    dailyCheckList : any;
+}
 
-const DailyCheckList = ({ onDelete, dailyCheckList }: any) => {
+
+
+const DailyCheckList = (props: DailyCheckListProps) => {
+    const { onDelete, dailyCheckList } = props;
     return (
         <Grid>
             <Grid>

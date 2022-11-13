@@ -19,7 +19,6 @@ const MainCalenderPage = () => {
     <Grid>
         메인 달력 화면입니다.
         <Calender/>
-        <DailyCheck/>
         <div>
             <Button onClick={goLogin}>
                 로그인화면 버튼
